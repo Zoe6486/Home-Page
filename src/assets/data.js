@@ -1,8 +1,10 @@
+import { BASE_PATH } from "@/config";
+
 // Header
 export const navLinkData = [
-  { id: 1, key: "home", to: "/", content: "HOME" },
-  { id: 2, key: "about", to: "/about", content: "ABOUT" },
-  { id: 3, key: "projects", to: "/projects", content: "PROJECTS" },
+  { id: 1, key: "home", to: `${BASE_PATH}/`, content: "HOME" },
+  { id: 2, key: "about", to: `${BASE_PATH}/about`, content: "ABOUT" },
+  { id: 3, key: "projects", to: `${BASE_PATH}/projects`, content: "PROJECTS" },
 ];
 
 export const projectsData = [

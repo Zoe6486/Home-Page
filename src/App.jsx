@@ -1,11 +1,10 @@
 import "./App.css";
 import Layout from "./Layout";
 import Navbar from "./components/navbar/Navbar";
-import Main from "./components/main/Main";
-import Footer from "./components/footer/Footer";
+import Content from "./components/content/Content";
 
 function App() {
-  return <Layout header={<Navbar />} main={<Main />} footer={<Footer />} />;
+  return <Layout header={<Navbar />} content={<Content />} />;
 }
 
 export default App;
