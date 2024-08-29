@@ -7,19 +7,23 @@ Index.propTypes = {
 };
 function Index({ header, content }) {
   return (
-    <div className="w-[100vw] h-[100vh] bg-bgColor text-textColor">
+    <div className="relative w-[100vw] h-[100vh]  text-textColor">
       {/* header 导航区*/}
-      <header className="w-full h-14 border-b-[1px] border-textColor flex justify-center items-center">
+      <header className=" w-full h-14 border-b-[1px] border-textColor flex justify-center items-center">
         {header}
       </header>
       {/* content 内容区*/}
-      <main className="container mx-auto  flex justify-center items-center">
+      <main className=" container mx-auto  flex justify-center items-center">
         {content}
       </main>
       {/* footer 页脚区*/}
       {/* <footer className="flex justify-center items-center w-full h-10 border-t-[1px] border-t-purple-50 ">
         {footer}
       </footer> */}
+      {/* 页面背景组件 */}
+      <ul className=" w-full h-full absolute top-0 left-0 bg-bgColor -z-10 overflow-hidden">
+        <li className=" w-10 h-10 bg-mainColor  absolute  top-full left-1/4 animate-listFloat"></li>
+      </ul>
     </div>
   );
 }

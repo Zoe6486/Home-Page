@@ -43,6 +43,7 @@ export default {
         leftToRight: "leftToRight 4s ease-in-out infinite",
         iconScale: "iconScale 0.5s ease-in-out 1",
         contactListScale: "contactListScale 0.5s ease-in-out 1",
+        listFloat: "listFloat 10s linear infinite",
       },
 
       keyframes: {
@@ -59,6 +60,18 @@ export default {
           "0%": { transform: "scale(1)" },
           "50%": { transform: "scale(1.1)" },
           "100%": { transform: "scale(1)" },
+        },
+        listFloat: {
+          "0%": {
+            transform: "translateY(0) rotate(0deg)",
+            opacity: "1",
+            "border-radius": "0",
+          },
+          "100%": {
+            transform: "translateY(-1000px) rotate(720deg)",
+            opacity: "0.5",
+            "border-radius": "50%",
+          },
         },
       },
 
