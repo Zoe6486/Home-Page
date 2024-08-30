@@ -20,11 +20,13 @@ export default {
       // },
       colors: {
         textColor: "#c1d3cf",
-        bgColor: "#1c1e26",
+        // bgColor: "#1c1e26",
+        bgColor: "#0e0d0e",
         bgColorHeader: "rgba(31, 31, 31, .7)",
-        mainColor: "#be82ba",
+        mainColor: "#fb80c2",
+        cubeColor: "#fb80c2",
         mainColor20: "rgba(145, 216, 209, .3)",
-        subColor: "#82a8d2",
+        subColor: "#ffffff",
         subColor2: "#8be1e4",
         subBgColor: "rgba(96, 121, 153,.2)",
         subBdColor: "rgba(96, 121, 153,.6)",
@@ -43,7 +45,7 @@ export default {
         leftToRight: "leftToRight 4s ease-in-out infinite",
         iconScale: "iconScale 0.5s ease-in-out 1",
         contactListScale: "contactListScale 0.5s ease-in-out 1",
-        listFloat: "listFloat 10s linear infinite",
+        listFloat: "listFloat 15s linear infinite",
       },
 
       keyframes: {
@@ -64,13 +66,13 @@ export default {
         listFloat: {
           "0%": {
             transform: "translateY(0) rotate(0deg)",
-            opacity: "1",
+            opacity: "0.55",
             "border-radius": "0",
           },
           "100%": {
             transform: "translateY(-1000px) rotate(720deg)",
-            opacity: "0.5",
-            "border-radius": "50%",
+            opacity: "0.3",
+            "border-radius": "20%",
           },
         },
       },

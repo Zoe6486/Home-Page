@@ -10,7 +10,7 @@ function Home() {
         <div className="flex flex-col items-center justify-center gap-16">
           <div className="flex items-center justify-center gap-3 text-2xl font-bold xs:text-3xl sm:text-4xl md:text-5xl">
             <span>Hi, I am</span>
-            <span className="text-mainColor ">
+            <span className="text-white ">
               <Typewriter
                 options={{
                   strings: [

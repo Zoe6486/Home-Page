@@ -4,8 +4,9 @@ Index.propTypes = {
   header: PropTypes.node, // 头部区显示的内容
   content: PropTypes.node, // 左侧栏显示的内容
   // footer: PropTypes.node, // 右侧内容栏显示的内容
+  animationBackground: PropTypes.node, // 背景动画内容
 };
-function Index({ header, content }) {
+function Index({ header, content, animationBackground }) {
   return (
     <div className="relative w-[100vw] h-[100vh]  text-textColor">
       {/* header 导航区*/}
@@ -21,10 +22,9 @@ function Index({ header, content }) {
         {footer}
       </footer> */}
       {/* 页面背景组件 */}
-      <ul className=" w-full h-full absolute top-0 left-0 bg-bgColor -z-10 overflow-hidden">
-        <li className="  w-10 h-10 bg-mainColor  absolute  top-full left-1/4 animate-listFloat"></li>
-        <li className="  w-20 h-20 bg-mainColor  absolute  top-full left-3/4 animate-listFloat"></li>
-      </ul>
+      <div className=" w-full h-full absolute top-0 left-0 bg-bgColor -z-10 overflow-hidden">
+        {animationBackground}
+      </div>
     </div>
   );
 }

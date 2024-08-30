@@ -66,7 +66,58 @@ https://zoe6486.github.io/Home-Page/
 
    然而，如果 `config.js` 文件只是简单地导出一些配置常量，那么可以直接在 `vite.config.js` 中引入并使用。
 
-2. asfdasf
+2. tailwind中使用模板字符串，生成动态类名的问题
+
+   ```jsx
+   import React from "react";
+   
+   /**
+    *
+    * @param {*}
+    * width: px
+    * height: px
+    * top: %
+    * left: %
+    * @returns
+    */
+   function AnimationList({ width, height, top, left }) {
+     return (
+       <li
+         className={`w-[${width}px] h-[${height}px] bg-mainColor absolute top-[${top}%] left-[${left}%] animate-listFloat`}
+       ></li>
+     );
+   }
+   
+   export default AnimationList;
+   
+   ```
+
+   上面的tailwind类名无法生效，原因是:Tailwind CSS 是基于静态扫描的编译器，它会扫描你的源代码来生成使用的类名。如果类名是动态生成的（例如通过模板字符串），Tailwind 可能无法识别并生成这些类，从而导致样式未被应用。
+
+   正确的做法：正确的做法是避免在 Tailwind 类名中使用模板字符串。你可以将这些值单独使用内联样式来设置，这样可以避免动态生成类名的问题：
+
+   ```jsx
+   import React from "react";
+   
+   function AnimationList({ width, height, top, left }) {
+     return (
+       <li
+         style={{
+           width: `${width}px`,
+           height: `${height}px`,
+           top: `${top}%`,
+           left: `${left}%`,
+         }}
+         className="bg-mainColor absolute animate-listFloat"
+       ></li>
+     );
+   }
+   
+   export default AnimationList;
+   
+   ```
+
+   
 
 3. afsda
 
