@@ -22,7 +22,8 @@ function Index({ header, content }) {
       </footer> */}
       {/* 页面背景组件 */}
       <ul className=" w-full h-full absolute top-0 left-0 bg-bgColor -z-10 overflow-hidden">
-        <li className=" w-10 h-10 bg-mainColor  absolute  top-full left-1/4 animate-listFloat"></li>
+        <li className="  w-10 h-10 bg-mainColor  absolute  top-full left-1/4 animate-listFloat"></li>
+        <li className="  w-20 h-20 bg-mainColor  absolute  top-full left-3/4 animate-listFloat"></li>
       </ul>
     </div>
   );

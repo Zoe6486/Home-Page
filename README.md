@@ -18,7 +18,7 @@ https://zoe6486.github.io/Home-Page/
    export default defineConfig({
      plugins: [react()],
      // deploy到GitHub时，配置基础路径
-     base: "/Home-Page/",
+     base: "/Home-Page",
      // 配置@路径, 应用组件时使用@代替./src/
      resolve: {
        alias: {
@@ -34,7 +34,7 @@ https://zoe6486.github.io/Home-Page/
 
    ```js
    // src/config.js
-   export const BASE_PATH = '/Home-Page/';
+   export const BASE_PATH = '/Home-Page';
    
    ```
 
@@ -69,3 +69,4 @@ https://zoe6486.github.io/Home-Page/
 2. asfdasf
 
 3. afsda
+
