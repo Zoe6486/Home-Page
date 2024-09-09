@@ -5,7 +5,7 @@ import SocialLinks from "../widgets/SocialLinks";
 function Home() {
   return (
     <>
-      <div className="flex w-full h-[100vh] flex-col items-center justify-center  gap-12">
+      <div className="flex w-full h-full  flex-col items-center justify-center  gap-12">
         {/* center type animation */}
         <div className="flex flex-col items-center justify-center gap-16">
           <div className="flex items-center justify-center gap-3 text-2xl font-bold xs:text-3xl sm:text-4xl md:text-5xl">

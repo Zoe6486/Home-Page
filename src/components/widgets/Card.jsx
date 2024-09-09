@@ -20,7 +20,9 @@ function Card({ item }) {
           <p>{item.content}</p>
         </div>
         {/* 右侧 */}
-        <div className="w-10 h-10 items-center ">{item.icon}</div>
+        <div className="w-24 h-24 items-center rounded-xl overflow-hidden">
+          <img className="w-full h-full" src={item.icon} alt="" />
+        </div>
       </a>
     </li>
   );

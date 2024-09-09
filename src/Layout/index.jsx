@@ -8,13 +8,16 @@ Index.propTypes = {
 };
 function Index({ header, content, animationBackground }) {
   return (
-    <div className="relative w-[100vw] h-[100vh]  text-textColor">
+    <div className="relative w-[100vw] text-textColor">
       {/* header 导航区*/}
-      <header className=" w-full h-14 border-b-[1px] border-textColor flex justify-center items-center">
+      <header
+        className=" w-full h-16 border-b-[1px] border-textColor flex justify-center items-center
+      "
+      >
         {header}
       </header>
       {/* content 内容区*/}
-      <main className=" container mx-auto  flex justify-center items-center">
+      <main className=" container mx-auto min-h-[calc(100vh-64px)] flex justify-center items-center">
         {content}
       </main>
       {/* footer 页脚区*/}

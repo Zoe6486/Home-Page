@@ -30,6 +30,7 @@ export default {
         subColor2: "#8be1e4",
         subBgColor: "rgba(96, 121, 153,.2)",
         subBdColor: "rgba(96, 121, 153,.6)",
+        navBgColor: "#2a2a2a",
       },
 
       backgroundSize: {
